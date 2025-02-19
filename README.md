@@ -15,8 +15,7 @@
 - HTMX is a tiny framework, but with just a few attributes, it can replace most, if not all, of your standard front end script requirements. It also does this using your backend to render your templates.
 
 - If your coding a django website, then this just makes front end coding as simple as it can be. just get used to sending snippets of html instead of whole pages.
-<<<<<<< HEAD
-=======
 
 - However this is NOT all HTMX can do. It can be used to trigger javascript functions using hx-on, deal with websockets and SSE, user prompts and confirmations, error handling and a lot more stuff. The thing is, it can do nearly all of this without any JS script.
->>>>>>> feature
+
+- Lets take a standard example of displaying a modal. Using JS, we call the backend get json back, update the modal html, and then set the css so the modal shows. With HTMX, we call the backend and it just replaces the whole modal element, which is then displayed. Pretty simple especially when you consider the templating engine will make the rendering as easy as anything.
