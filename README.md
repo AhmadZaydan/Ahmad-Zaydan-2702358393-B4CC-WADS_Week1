@@ -11,3 +11,7 @@
 - HTMX requires you to rethink how you do front end coding. For a long time we have worked on the idea that the front end does Ajax calls that return json, which we then render into templates, or make changes to elements in the dom. HTMX basically says that all rendering is done by the backend instead. No more sending JSON, and altering elements with Javascript, instead we get HTML back and just replace/add to elements on the front end. We basically shift away from Javascript on the front end doing most of the work, to using the backend and template engines on the backend to deliver ready to use html snippets.
 
 - So all HTMX needs to do is send the Ajax call based on the right event and then decide what is going to happen to the html when its returned.
+
+- HTMX is a tiny framework, but with just a few attributes, it can replace most, if not all, of your standard front end script requirements. It also does this using your backend to render your templates.
+
+- If your coding a django website, then this just makes front end coding as simple as it can be. just get used to sending snippets of html instead of whole pages.
